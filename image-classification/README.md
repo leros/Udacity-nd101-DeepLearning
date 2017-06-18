@@ -1,4 +1,3 @@
-
 ### Architecture
 INPUT -> [CONV -> RELU -> POOL] * 3 -> DROPOUT -> [FC -> RELU] * 2 -> DROPOUT -> OUTPUT
 
@@ -22,4 +21,7 @@ CS231n note: Convolutional Neural Networks (CNNs / ConvNets)
 TensorFlow-Examples: CNN
 Image Classification Project Speficiation
 ConvNetJS CIFAR-10 demo: architecture and hyper-parameters
-3/6/2017
+
+### Results
+- Training Accuracy: 0.74480
+- Testing Accuracy: 0.73170
