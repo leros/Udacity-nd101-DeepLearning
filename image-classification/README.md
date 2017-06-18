@@ -1,5 +1,5 @@
 ### Architecture
-INPUT -> [CONV -> RELU -> POOL] * 3 -> DROPOUT -> [FC -> RELU] * 2 -> DROPOUT -> OUTPUT
+INPUT -> [CONV -> RELU -> POOL] * 3 -> FLAT -> DROPOUT -> [FC -> RELU] * 2 -> DROPOUT -> OUTPUT
 
 ### 3 Conv-Pool layers:
 - filters: 32 -> 64 -> 128
