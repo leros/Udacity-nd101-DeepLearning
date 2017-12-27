@@ -11775,41 +11775,6 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I managed to get a 77%+ validation accuracy. Here are some key information about the solution.</p>
-<h3 id="Architecture">Architecture<a class="anchor-link" href="#Architecture">&#182;</a></h3><p>INPUT -&gt; [CONV -&gt; RELU -&gt; POOL] * 3 -&gt; [FC -&gt; RELU] -&gt; DROPOUT -&gt; [FC -&gt; RELU] -&gt; OUTPUT</p>
-<h3 id="Hyper-parameters">Hyper-parameters<a class="anchor-link" href="#Hyper-parameters">&#182;</a></h3><ul>
-<li>Epochs: 100</li>
-<li>Batch size: 256</li>
-<li>Keep probability: 0.5</li>
-<li>Stddev for truncated_normal function: 0.05</li>
-<li>3 Conv-Pool layers:<ul>
-<li>filters: 32 -&gt; 64 -&gt; 128</li>
-<li>conv_ksize: (3, 3)</li>
-<li>conv_strides: (1, 1)</li>
-<li>pool_ksize: (2,2)</li>
-<li>pool_strides=(2, 2)</li>
-</ul>
-</li>
-<li>2 Fully-Connected layers:<ul>
-<li>nodes in layer 1: 1024</li>
-<li>nodes in layer 2: 128</li>
-</ul>
-</li>
-</ul>
-<h3 id="References">References<a class="anchor-link" href="#References">&#182;</a></h3><ul>
-<li><a href="http://cs231n.github.io/convolutional-networks/">CS231n note: Convolutional Neural Networks (CNNs / ConvNets)</a></li>
-<li><a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/convolutional_network.py">TensorFlow-Examples: CNN</a></li>
-<li><a href="https://review.udacity.com/#!/rubrics/723/view">Image Classification Project Speficiation</a></li>
-<li><a href="https://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html">ConvNetJS CIFAR-10 demo</a>: architecture and hyper-parameters</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Image-Classification">Image Classification<a class="anchor-link" href="#Image-Classification">&#182;</a></h1><p>In this project, you'll classify images from the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10 dataset</a>.  The dataset consists of airplanes, dogs, cats, and other objects. You'll preprocess the images, then train a convolutional neural network on all the samples. The images need to be normalized and the labels need to be one-hot encoded.  You'll get to apply what you learned and build a convolutional, max pooling, dropout, and fully connected layers.  At the end, you'll get to see your neural network's predictions on the sample images.</p>
 <h2 id="Get-the-Data">Get the Data<a class="anchor-link" href="#Get-the-Data">&#182;</a></h2><p>Run the following cell to download the <a href="https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz">CIFAR-10 dataset for python</a>.</p>
 
